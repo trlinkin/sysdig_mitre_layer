@@ -4,9 +4,10 @@
 
 This project is a quick a sloppy script to generate a layer for the [Mitre Att&ck
 Navigator](https://mitre-attack.github.io/attack-navigator/). 
-The idea is take the rule you have in your Sysdig Secure instance and
+The idea is take the rules you have in your Sysdig Secure instance and
 map them onto a mildly prepared layer such that they will create an easy to
-explore Navigator experience.
+explore Navigator experience. If there is a technique you're concerned about, you
+can see the Sysdig Secure rules that apply to it.
 
 #### I'm Bored Already! 
 
@@ -24,11 +25,11 @@ to include in the policies you're making to cover your infrastructure.
 ### What it isn't
 
 The resulting layer is not suggesting that you use every rule or that you even care
-about every technique. It also cannot tell you what rules you currently have in
-use. You could be using the rules in multiple places based on the policies
-you've created. I suggest you use the [Rules Library](https://docs.sysdig.com/en/docs/sysdig-secure/policies/manage-rules/)
-in the Sysdig Secure Console
-to examine a specific rule and see which policies it indicates being used in.
+about every technique. It also cannot tell you which techniques you have rules for that
+are currently have in use. You could be using the rules in multiple places based on
+the policies you've created. I suggest you use the [Rules Library](https://docs.sysdig.com/en/docs/sysdig-secure/policies/manage-rules/)
+in the Sysdig Secure Console to examine a specific rule and see which policies it
+indicates being used in.
 
 ### Can I map my custom rules?
 
@@ -69,6 +70,7 @@ Wrote file sysdig_secure_layer_2022-06-23.json
 ```
 
 Finally, head on over the [Mitre Att&ck Navigator](https://mitre-attack.github.io/attack-navigator/) 
-and load it in.
+and load it in. *You will see the rules that apply to each technique listed in the comments on the
+technique.* 
 
 Have Fun
